@@ -1,0 +1,175 @@
+/* === ÁLTALÁNOS STÍLUSOK (mindkét oldalra érvényes) === */
+body {
+    margin: 0;
+    padding: 20px 0;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    padding: 20px 40px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.8;
+}
+
+section {
+    overflow: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 40%;
+}
+
+.float-right {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 40%;
+}
+
+/* === EGYIPTOM OLDAL DIZÁJN === */
+#egyiptom {
+    background-image: url("kepek/egyiptomihatter.jpg");
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#egyiptom .container {
+    background-color: #f3d27e;
+    border: 2px solid #cfa34f;
+}
+
+#egyiptom header {
+    border-bottom: 2px solid #cfa34f;
+}
+
+#egyiptom header h1 { color: #a11c1c; font-size: 36px; }
+#egyiptom header h2 { color: #b0521f; font-size: 28px; }
+#egyiptom section h2 { color: #a11c1c; font-size: 26px; }
+
+#egyiptom img {
+    border: 2px solid #cfa34f;
+    padding: 3px;
+}
+
+/* Egyiptom menü stílusai */
+#egyiptom nav {
+    background-color: rgba(243, 210, 126, 0.25); /* Meleg, áttetsző háttér */
+    border-color: rgba(207, 163, 79, 0.4);
+}
+
+#egyiptom nav a {
+    color: #a11c1c;
+}
+
+#egyiptom nav a:hover {
+    background-color: rgba(207, 163, 79, 0.4);
+    color: #a11c1c;
+}
+
+
+/* === AUTÓK OLDAL DIZÁJN === */
+#autok {
+    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+#autok .container {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+}
+
+#autok header {
+     border-bottom: 1px solid #ccc;
+}
+
+#autok h1 { color: #002D62; font-size: 36px; }
+#autok section h2 { color: #002D62; font-size: 26px; }
+
+#autok img {
+    border: none;
+}
+
+.Ferrari{
+  text-align: right;
+}
+
+.Chrysler{
+  text-align: right;
+}
+
+/* Autók menü stílusai */
+#autok nav {
+    background-color: rgba(255, 255, 255, 0.2); /* Klasszikus fehér üveg háttér */
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+#autok nav a {
+    color: #002D62;
+}
+
+#autok nav a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #002D62;
+}
+
+
+/* === MENÜ STÍLUSOK (általános) === */
+nav {
+    /* Az üveg effekt alapjai */
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(10px); /* Támogatás Safari böngészőhöz */
+    border-radius: 12px;
+    border: 3px solid; /* A keret színét a téma adja meg */
+    margin-bottom: 20px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* A menü megjelenési animációja */
+    animation: fadeInDown 0.5s ease-out forwards;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border-radius: 11px; /* A hover effekt sarkai is le legyenek kerekítve */
+}
+
+/* === MENÜ MEGJELENÉSI ANIMÁCIÓ === */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
